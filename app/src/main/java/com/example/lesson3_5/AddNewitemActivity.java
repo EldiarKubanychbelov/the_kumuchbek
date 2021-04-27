@@ -25,9 +25,9 @@ public class AddNewitemActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.putExtra("name",txtEdit.getText().toString());
-                setResult(RESULT_OK,intent);
-                finish();
+                intent.putExtra("name", txtEdit.getText().toString()); //Установил данные
+                setResult(RESULT_OK, intent); //Сообщил, что данные для результата установлены
+                finish(); //Закрыл Activity. Далее код сработает вonActivityResult
             }
         });
     }
